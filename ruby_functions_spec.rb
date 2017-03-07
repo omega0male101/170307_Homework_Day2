@@ -79,7 +79,7 @@ class Functions_Practice < MiniTest::Test
 
   def test_volume_of_sphere()
     volume_of_sphere = sphere(5)
-    assert_equal(523.3333333333334, volume_of_sphere)
+    assert_equal(523.6, volume_of_sphere)
   end
 
   def test_convert()

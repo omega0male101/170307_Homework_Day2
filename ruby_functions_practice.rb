@@ -57,7 +57,7 @@ def side(side)
 end
 
 def sphere(radius)
-  return  (4 / 3.to_f) * (3.14) * (radius ** 3)
+  return  ((4 / 3.to_f) * Math::PI * (radius ** 3)).round(1)
 end
 
 def convert(unit)
