@@ -38,17 +38,21 @@ def number_to_full_month_name(string)
   elsif (string == 9)
     return "September"
   end
+  #when string == 1  //  return OTHER WAY
 end
 
 def number_to_short_month_name(string)
 
-  if (string == 1)
-    return "Jan"
-  elsif (string == 3)
-    return "Mar"
-  elsif (string == 9)
-    return "Sep"
-  end
+  # if (string == 1)
+  #   return "Jan"
+  # elsif (string == 3)
+  #   return "Mar"
+  # elsif (string == 9)
+  #   return "Sep"
+  # end
+
+  sliced_month_name = number_to_full_month_name(string).slice(0,3)
+  return sliced_month_name
 
 end
 
